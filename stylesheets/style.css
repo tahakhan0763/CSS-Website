@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    scroll-behavior: smooth;
+   
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    background: rgba(65, 68, 75, 0.0); /* Dark background */
+    position:fixed;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 12vh;
+    transition: background 0.8s ease-in-out, opacity 0.4s ease-in-out;
+
+}
+
+.nav.transparent {
+    background: rgba(0, 0, 0, 0.8); /* More transparent after scrolling */
+}
+
+.nav h1 {
+    color: whitesmoke;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    margin: 0;
+    align-items: center;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 40px;
+}
+
+
+/* Navigation Links */
+.tags {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: flex end;
+    margin-right: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+/* Navigation Links Styling */
+.tags a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    
+}
+
+/* Hover Effects */
+.tags a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.custom-container {
+    background-color: black;
+    color: white;
+    margin-top: 0;
+}
+
+footer {
+    margin-top: 1px;
+    display: flex;
+    flex-direction: row;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-style: solid;
+    border-color: #41444B;
+    box-shadow: 0px 5px gray;
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    line-height: 2;
+}
+
+footer p {
+    font-size: 16px;
+    border-bottom: 1px solid #ffffff;
+    padding-top: 20px;
+}
+footer .contact_us p:last-child {
+    border-bottom: none;
+}
+
+
