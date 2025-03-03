@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+#navbarNavAltMarkup a{
+    font-size: 20px;
+    padding: 10px 22px;
+}
+#navbarNavAltMarkup  .nav-link{
+    color: #202224 !important;
+    /* font-weight: 500; */
+}
+#navbarNavAltMarkup  #user_img{
+    border-radius: 60%;
+    background-color: rgba(128, 128, 128, 0.137);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    margin-top: -0px !important;
+}
+#toggle_icon{
+    color: blue;
+}
+/* -----------nav section ended------------------------- */
+
+/* genearl css for whole document-----------starts */
+section{
+    color: #202224;
+}
+
+.front{
+    background-color: #ffffff;
+    border: 1px solid #E8E8E8;
+}
+#back{
+    background-color: #F5F6FA;
+}
+.subjects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+/* -------general css for whole documents ends------- */
+
+/* ---------css for side bar  */
+.side{
+    height: fit-content;
+}
+.title{
+    font-weight: 700;
+}
+span{
+    color: blue;
+}
+.memo{
+    color: #474747;
+}
+.services_list a{
+    text-decoration: none;
+    color: #202224;
+    font-weight: 500;
+}
+.services_list .items{
+transition: .5s;
+}
+.services_list .items:hover{
+    background-color: #4880FF;
+    color: #ffffff;
+}
+.services_list .items:hover a{
+    color: #ffffff;
+}
+/* --------------side-bar completed--------------------------- */
+.mid{
+    background-color: #F5F6FA;
+}
+.mid .name{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 15px;
+}
+.cards p{
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 14px;
+    color: #202224;
+    font-size: 16px;
+    font-weight: 700;
+}
+.apexcharts-legend {
+    display: block !important;
+
+
+}
+/* -------------mid section ends-------------------- */
+/* -------------------right section begins-------------------- */
+.list a{
+    text-decoration: none;
+    color: #202224;
+}
