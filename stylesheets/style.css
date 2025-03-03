@@ -44,7 +44,6 @@ body{
 /* Navigation Links */
 .tags {
     display: flex;
-    gap: 50px;
     align-items: center;
     justify-content: flex end;
     margin-right: 40px;
@@ -60,7 +59,16 @@ body{
     font-weight: 500;
     transition: all 0.3s ease-in-out;
     border-radius: 5px;  
+    padding: 10px 20px;
 }
+
+
+/* Hover Effects */
+.tags a:hover {
+    color: gray;
+    transform: scale(1.1);
+}
+
 /* make the navbar-responsive  */
 #menu_btn{
     display: none;
@@ -81,9 +89,12 @@ body{
         width: 100%;
         height: 100vh;
         background-color: rgb(0, 0, 0);
+        color: #ffffff;
     }
-    .tags a { 
+    .tags a:hover { 
         font-size: 22px;
+          background-color: rgba(255, 255, 255, 0.466);
+          color: #ffffff;
     }
     #menu_btn{
         display: block;
@@ -94,7 +105,7 @@ body{
     }
 }
     
-}
+
 /* ---------user_img_icon */
 #user_img{
     border-radius: 60%;
@@ -105,12 +116,6 @@ body{
     padding: 10px;
 }
 
-/* Hover Effects */
-.tags a:hover {
-    padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.2);
-    transform: scale(1.1);
-}
 
 .custom-container {
     background-color: black;
