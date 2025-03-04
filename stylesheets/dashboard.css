@@ -1,23 +1,51 @@
 *{
     box-sizing: border-box;
 }
-#navbarNavAltMarkup a{
-    font-size: 20px;
-    padding: 10px 22px;
+/* ----------nav section started--------------- */
+body nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-#navbarNavAltMarkup  .nav-link{
-    color: #202224 !important;
-    /* font-weight: 500; */
+body nav .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 0 30px;
 }
-#navbarNavAltMarkup  #user_img{
-    border-radius: 60%;
-    background-color: rgba(128, 128, 128, 0.137);
+body nav .profile{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 30px;
+}
+#user_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#user_img .img{
     width: 50px;
     height: 50px;
+    border-radius: 50%;
+    background-color: #202224;
+    overflow: hidden;
     text-align: center;
-    padding: 10px;
-    margin-top: -0px !important;
 }
+#user_img .img img{
+    width: 100%;
+}
+.user-id p{
+   margin: 0;
+   font-weight: 800;
+   color: #202224;
+}
+.user-id label{
+    color: #474747
+}
+
 #toggle_icon{
     color: blue;
 }
@@ -26,6 +54,12 @@
 /* genearl css for whole document-----------starts */
 section{
     color: #202224;
+}
+.rows{
+    display: grid;
+    grid-template-columns: auto auto 20%; /* Left fixed, middle flexible, right fixed */
+    gap: 0px; /* Spacing */
+    height: 100vh; /* Full height */
 }
 
 .front{
@@ -44,7 +78,10 @@ section{
 
 /* ---------css for side bar  */
 .side{
-    height: fit-content;
+    height:85vh;
+    overflow: hidden;
+    width: fit-content;
+    transition: .5s;
 }
 .title{
     font-weight: 700;
@@ -70,9 +107,35 @@ transition: .5s;
 .services_list .items:hover a{
     color: #ffffff;
 }
+@media screen and (max-width:1370px) {
+    .title{
+        display: none;
+    }
+    .side{
+       padding: 50px 0px !important;
+    }
+    .right{
+        padding-top: 50px !important;
+    }
+    .services_list a{
+        display: none;
+    }
+    .memo{
+        text-align: center;
+    }
+    .services_list i{
+        margin-left: 20px !important;
+    }
+    .buttons{
+        padding-top: 20px;
+    }
+}
 /* --------------side-bar completed--------------------------- */
+/* ------mid section starts here-------------- */
 .mid{
     background-color: #F5F6FA;
+    overflow: scroll;
+    height: 100vh;
 }
 .mid .name{
     font-family:Arial, Helvetica, sans-serif;
@@ -91,14 +154,50 @@ transition: .5s;
     font-size: 16px;
     font-weight: 700;
 }
-.apexcharts-legend {
-    display: block !important;
-
+@media screen and (max-width:790px){
+    .cards{
+        grid-template-columns: 1fr;
+    }
 
 }
+
 /* -------------mid section ends-------------------- */
 /* -------------------right section begins-------------------- */
 .list a{
     text-decoration: none;
     color: #202224;
 }
+    @media screen and (max-width:790px){
+      
+        .list{
+            display: grid ;
+            grid-template-columns: 1fr 1fr ;
+        }
+    }
+
+/* ------------make the dashboard responsive---------------- */
+
+@media (max-width: 992px) {
+    .rows {
+      grid-template-columns: auto auto; /* Left stays fixed, right moves below */
+      grid-template-rows: auto auto;
+    }
+    .right {
+      grid-column: span 2; /* Makes right column take full width below */
+    }
+    .side{
+        height: 90vh !important;
+    }
+  }
+  
+  /* Responsive for small screens (e.g., mobile) */
+  @media (max-width: 600px) {
+    .dashboard {
+      grid-template-columns: 100%; 
+      grid-template-rows: auto auto auto;
+    }
+    .side, .mid, .right {
+      grid-column: auto;
+    }
+   
+  }

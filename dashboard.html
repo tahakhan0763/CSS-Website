@@ -15,36 +15,34 @@
 
 <body>
   <div class="container-fluid shadow-sm">
-    <nav class="navbar navbar-expand-lg px-2 ">
-      <div class="container-fluid">
+    <nav class="px-2 py-3">
+      <div class="logo">
+        <i class="fa-solid fa-bars fs-2" id="toggle_icon"></i>
         <a class="navbar-brand  fs-1  fw-bold h1" href="#">Lyc<span>eum</span></a>
-        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <i class="fa-solid fa-bars " id="toggle_icon"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto text-center">
-            <a class="nav-link" href="#">Home</a>
-            <a class="nav-link" href="#">Why Us</a>
-            <a class="nav-link" href="#">Events</a>
-            <a class="nav-link" href="#">Free content</a>
-            <a class="nav-link" href="#">Packages</a>
-            <a class="nav-link" href="#">Sign in</a>
-            <a class="nav-link m-auto mt-2" href="#" id="user_img">
-              <i class="fa-solid fa-user"></i>
-            </a>
+      </div>
+      <div class="profile">
+        <i class="fa-solid fa-bell fs-2"></i>
+        <div id="user_img">
+          <div class="img">
+            <img src="Images/img.jpeg">
+          </div>
+          <div class="user-id">
+            <p>Kamran</p>
+            <label for="">Admin</label>
           </div>
         </div>
+
       </div>
+
     </nav>
   </div>
+
   <!-- ============nav section ended -->
   <section class="">
-    <div class="row" id="back">
+    <div class="rows" id="back">
       <!-- sidebar strted----------------------------------------------- -->
-      <div class="col-md-2 mt-2  m-4 p-4 pt-2 pb-0 rounded-4 front side">
-        <div class="title text-center p-3">
+      <div class="  mt-2  p-4 pt-2 pb-0 rounded-4 front side" id="side">
+        <div class="title text-center p-3" id="remove">
           <p class="fs-3">Lyc<span>eum</span></p>
         </div>
         <div class="memo">
@@ -85,25 +83,21 @@
 
       <!-- mid-section started----------------------------- -->
 
-      <div class="col-md-6 p-2  mt-2  me-4  mid">
-        <div class="name">
-          <h2><span>Dash</span>board</h2>
+      <div class="  mt-2    mid">
+        <div class="title px-5">
+          <p class="fs-3">Dash<span>bord</span></p>
         </div>
-        <div class="cards  p-2 px-3">
+        <div class="cards px-3">
           <div class="front">
             <p>PERCENTAGE OF COURSE DONE.
               MASTERY ACHIEVED
-              </p>
+            </p>
             <div class="" id="chart"></div>
           </div>
           <div class="front">
             <p class="mb-5">Days Till Expiry: </p>
             <div class="chart" id="chart2"></div>
           </div>
-
-
-
-
         </div>
         <div class="row graph mt-2 p-5 shadow-lg m-3 front" id="chart3">
           <!-- =====================================<br>
@@ -116,42 +110,47 @@
           -------------------------------------- <br> -->
         </div>
 
-      
 
-        <div class="row subjects mt-2 p-5 shadow-lg m-3 front">
-          <div class="col-1">
-            <p>mathematics</p>
-            <p>mathematics</p>
-            <p>mathematics</p>
-            <p>mathematics</p>
-          </div>
-          <div class="col-1">
-            <p>mathematics</p>
-            <p>mathematics</p>
-            <p>mathematics</p>
-            <p>mathematics</p>
-          </div>
-          <div class="col-1">
-            <p>mathematics</p>
-            <p>mathematics</p>
-            <p>mathematics</p>
-            <p>mathematics</p>
-          </div>
 
+        <div class="row mt-2 p-5 shadow-lg m-3 front">
+          <div class="title text-center p-3">
+            <p class="fs-3">List of <span>Subjects</span></p>
+          </div>
+          <div class="subjects">
+          <div class="col-1">
+            <p>mathematics</p>
+            <p>mathematics</p>
+            <p>mathematics</p>
+            <p>mathematics</p>
+          </div>
+          <div class="col-1">
+            <p>mathematics</p>
+            <p>mathematics</p>
+            <p>mathematics</p>
+            <p>mathematics</p>
+          </div>
+          <div class="col-1">
+            <p>mathematics</p>
+            <p>mathematics</p>
+            <p>mathematics</p>
+            <p>mathematics</p>
+          </div>
+        </div>
         </div>
       </div>
-        <!-- mid-section-ended---------------------------------------------- -->
-         <!-- right-sied section starts-------------------------------- -->
-      <div class="col-md-3 mt-2  p-4 pt-2 rounded-4  front">
+      <!-- mid-section-ended---------------------------------------------- -->
+      <!-- right-sied section starts-------------------------------- -->
+      <div class=" mt-2  p-4 pt-2 rounded-4  front  right">
         <div class="title text-center p-3">
           <p class="fs-3">Topics of <span>Geography</span></p>
         </div>
         <div class="memo">
           <p>
-            topics
+            List of topics
           </p>
         </div>
         <div class="list">
+         
           <div class="items d-flex align-items-center justify-content-start  mb-2 p-3 rounded-1">
             <i class="fa-brands fa-readme  me-3"></i>
             <a href="#">Reading Materials</a>
@@ -190,6 +189,42 @@
   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
   <script>
+// toggole btn----------------------
+var toggle_icon = document.getElementById("toggle_icon");
+var side = document.getElementById("side");
+var title = document.getElementById("remove");
+const links = document.querySelectorAll(".services_list .items a");
+const icons = document.querySelectorAll(".services_list .items i");
+toggle_icon.addEventListener('click',function(){
+  var lenght = document.querySelector("#side").offsetWidth;
+if (lenght> 80) {
+  side.style.width = "80px";
+  title.style.display= "none"
+  links.forEach(link => {
+   link.style.display = "none";
+});
+  icons.forEach(k => {
+    k.style.marginLeft = "-11px"
+ 
+});
+} else {
+  title.style.display= "block";
+
+  side.style.width = "270px";
+  links.forEach(link => {
+    link.style.display = "block";
+
+});
+  icons.forEach(k => {
+    k.style.marginLeft = "-11px"
+ 
+});
+}
+
+
+ 
+})
+// ------------------------------------- Include ApexCharts 
     // chart for the lenght of course covered-------------------------------------
     var options = {
       series: [55, 22],
@@ -242,7 +277,7 @@
             width: 200
           },
           legend: {
-            show : false
+            show: false
           }
         }
       }]
@@ -253,38 +288,38 @@
     // ---------------chart for the timeline ends------------------------
     // --------------------chart for whole progress information
     var options = {
-          series: [{
-          name: 'series1',
-          data: [31, 40, 28, 51, 42, 109, 100]
-        }, {
-          name: 'series2',
-          data: [11, 32, 45, 32, 34, 52, 41]
-        }],
-          chart: {
-          height: 350,
-          type: 'area'
+      series: [{
+        name: 'series1',
+        data: [31, 40, 28, 51, 42, 109, 100]
+      }, {
+        name: 'series2',
+        data: [11, 32, 45, 32, 34, 52, 41]
+      }],
+      chart: {
+        height: 350,
+        type: 'area'
+      },
+      dataLabels: {
+        enabled: false
+      },
+      stroke: {
+        curve: 'smooth'
+      },
+      xaxis: {
+        type: 'datetime',
+        categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+      },
+      tooltip: {
+        x: {
+          format: 'dd/MM/yy HH:mm'
         },
-        dataLabels: {
-          enabled: false
-        },
-        stroke: {
-          curve: 'smooth'
-        },
-        xaxis: {
-          type: 'datetime',
-          categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
-        },
-        tooltip: {
-          x: {
-            format: 'dd/MM/yy HH:mm'
-          },
-        },
-        };
+      },
+    };
 
-        var chart = new ApexCharts(document.querySelector("#chart3"), options);
-        chart.render();
-      
-        // ---------------main chart ends
+    var chart = new ApexCharts(document.querySelector("#chart3"), options);
+    chart.render();
+
+    // ---------------main chart ends
   </script>
 
 
