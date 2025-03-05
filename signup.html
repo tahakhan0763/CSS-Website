@@ -1,57 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheets/signup.css">
     <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/signUp.css">
 </head>
+
 <body>
-    <nav class="nav">
-        <h1>Lyceum</h1>
-        <div class="tags">
-            <a href="index.html">Home</a>
-            <a href="#why_us">Why Us</a>
-            <a href="discounts.html">Events</a>
-            <a href="freecontent.html">Free Content</a>
-            <a href="packages.html">Packages</a>
-            <a href="signin.html">Sign in</a>
+    <div class="container">
+        <div class="form">
+            <div class="profile">
+                <div class="whole">
+                    <img src="blank-profile-picture-973460_1280.webp" id="img">
+                    <label for="upload_picture">Upload Photo</label>
+                </div>
+                <input type="file" style="display: none;" id="upload_picture" placeholder="profile Photo">
+            </div>
+            <div class="inputs">
+                <div class="input_1">
+                    <label for="">First Name</label>
+                    <input type="text" placeholder="Enter your first Name">
+                </div>
+                <div class="input_1">
+                    <label for="">Last Name</label>
+                    <input type="text" placeholder="Enter your last Name">
+                </div>
+                <div class="input_1">
+                    <label for="">Your Email</label>
+                    <input type="text" placeholder="Enter your Email">
+                </div>
+                <div class="input_1">
+                    <label for="">Phone Number</label>
+                    <input type="text" placeholder="Enter your phone Number">
+                </div>
+                <div class="input_1">
+                    <label for="">Date Of Birth</label>
+                    <input type="text" placeholder="Enter your birthdate">
+                </div>
+                <div class="input_1" id="special">
+                    <label for="">Gender</label>
+                    <select>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="submit">
+                <a href="">Sign Up</a>
+            </div>
         </div>
-    </nav>
-    <section>
-        
-        <fieldset class="container">
-            <h3>Sign Up for our Most Premium services</h3>
-            <form action="submit" method="post">
-                <div>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name">
-                </div>
-            
-                <div>
-                    <label for="id_">User ID</label>
-                    <input type="text" id="id_" name="id_" placeholder="Email or CNIC">
-                </div>
-            
-                <div>
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
-                </div>
-            
-                <div>
-                    <label for="cnfrm">Transaction ID</label>
-                    <input type="text" name="transaction_id" id="cnfrm">
-                </div>
-            
-                <div>
-                    <label for="cnfrm">Confirm Password</label>
-                    <input type="password" name="confirm_password" id="cnfrm">
-                </div>
-                <div>
-                <button>Submit</button>
-                </div>
-            </form>
-            
-    </section>
+    </div>
+    <!-- ------------content of html ended----------------- -->
+    <script>
+        var upload_picture = document.getElementById("upload_picture");
+        var img = document.getElementById("img");
+        upload_picture.onchange = function(event){
+            var pic = event.target.files[0];
+            var createUrl = URL.createObjectURL(pic);
+            img.src = createUrl;
+        }
+
+    </script>
 </body>
+
 </html>
