@@ -9,11 +9,12 @@ body{
     justify-content: center;
 }
 form{
-    width: 440px;
+    width: 430px;
     background-color: #ffffff;
     border-radius: 24px;
-    padding: 10px 55px;
+    padding: 40px 55px;
     margin-top: 20px;
+    padding-bottom: 20px;
 }
 .header{
     width: 100%;
@@ -22,36 +23,31 @@ form{
 .header .logo{
     font-size: 32px ;
     font-weight: bold;
-    /* margin-bottom: 15px; */
 }
 .header .caption{
-    font-size: 16px;
+    font-size: 14px;
     color: #202224;
 }
 .input_1{
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .input_1 label{
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 16px;
     display: block;
 }
 .input_1 input{
     width: 100%;
     background-color: #F1F4F9;
-    padding: 15px;
-    border-radius: 8px;
+    padding: 8px;
+    border-radius: 5px;
     border: 1px solid #D8D8D8;
     margin-bottom: 10px;
     outline: none;
 }
 .input_1 input::placeholder{
     color: #b1abab;
-}
-#password::placeholder{
-    font-size: 90px;
-    letter-spacing: -5px;
 }
 .input_1 .label{
     display: flex;
@@ -80,6 +76,7 @@ form{
   width: 100%;
   margin-bottom: 30px;
   text-align: center;
+  transition: .5s;
 }
 .submit a{
     padding: 15px 87px;
@@ -87,6 +84,13 @@ form{
     color: #ffffff;
     border-radius: 8px;
     text-decoration: none;
+    transition: .5s;
+}
+.submit:hover{
+    transform:scale(1.1);
+}
+.submit:hover a{
+    background-color: #202224;
 }
 .alternative{
     text-align: center;
