@@ -1,137 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="stylesheets/freecontent.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheets/freeContent.css">
 </head>
 
-<body class="bg-slate-900">
-    <nav class="nav">
-        <h1>Lyceum</h1>
-        <div class="tags">
-            <a href="index.html">Home</a>
-            <a href="#why_us">Why Us</a>
-            <a href="discounts.html">Events</a>
-            <a href="freecontent.html">Free Content</a>
-            <a href="packages.html">Packages</a>
-            <a href="signin.html">Sign in</a>
+<body>
+  <section class="container-fluid p-4 main">
+    <section class="anouncemnt text-center rounded-1">
+      <p class="p-2">Free Courses <i class="fa-solid fa-star m-1"></i> Sale Ends Soon, Get It Now <i
+          class="fa-solid fa-arrow-right ms-4"></i></p>
+    </section>
+    <!-- anouncement section ended------------------ -->
+    <section class="container navbarr">
+      <!-- <nav class="navbar navbar-expand-lg ">
+        <a class="navbar-brand fs-3 fw-bold me-5 " href="#">Lyc<span>eum</span></a>
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-lg-auto  text-center mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <hr class="my-4">
+          </ul>
+          <form class=" text-center">
+            <button class="btnn rounded-1" type="submit">Sign Up</button>
+            <button class="btnn rounded-2 color " type="submit">Login</button>
+          </form>
         </div>
-    </nav>
-    <div class="page-container">
-        <div class="left-ad">
-            <p>Left Ad Space</p>
+      </nav> -->
+    </section>
+    <!-- ------navbar section ended--------------- -->
+    <section class="hero pb-5">
+      <div class="container pt-2">
+        <div class="title text-center">
+          <h1>Subj<span>ects</span></h1>
+          <!-- <p class="mt-4">Our commitment to excellence has led us to achieve significant milestones along our journey. Here
+            are some of our notable achievements</p> -->
         </div>
-        <div class="content">
-            <div class="group">
-                <h2>CSS Compulsory Subjects</h2>
-                <div class="subjects">
-                    <a href="english-essay.html"><button>English Essay</button></a>
-                    <a href="precis-composition.html"><button>English (Precis and Composition)</button></a>
-                    <a href="general-science-ability.html"><button>General Science and Ability</button></a>
-                    <a href="Subject Files/current-affairs.html"><button>Current Affairs</button></a>
-                    <a href="pakistan-affairs.html"><button>Pakistan Affairs</button></a>
-                    <a href="islamic-studies.html"><button>Islamic Studies or Comparative Study of Major Religions</button></a>
-                </div>
-            </div>
-
-            <div class="group">
-                <h2>Group-I (200 Marks)</h2>
-                    <div class="subjects">
-                        <a href="accountancy-auditing.html"><button>Accountancy & Auditing</button></a>
-                        <a href="economics.html"><button>Economics</button></a>
-                        <a href="computer-science.html"><button>Computer Science</button></a>
-                        <a href="political-science.html"><button>Political Science</button></a>
-                        <a href="international-relations.html"><button>International Relations</button></a>
-                    </div>
-            </div>
-
-            <div class="group">
-                <h2>Group-II (200 Marks or Two of 100 Marks)</h2>
-                    <div class="subjects">
-                        <a href="physics.html"><button>Physics</button></a>
-                        <a href="chemistry.html"><button>Chemistry</button></a>
-                        <a href="applied-mathematics.html"><button>Applied Mathematics</button></a>
-                        <a href="pure-mathematics.html"><button>Pure Mathematics</button></a>
-                        <a href="statistics.html"><button>Statistics</button></a>
-                        <a href="geology.html"><button>Geology</button></a>
-                    </div>
-                <div class="board_ad">
-                    <p>Ad Space</p>
-                </div>
-            </div>
-            
-            <div class="group">
-                <h2>Group-III (100 Marks)</h2>
-                <div class="subjects">
-                        <a href="business-administration.html"><button>Business Administration</button></a>
-                        <a href="public-administration.html"><button>Public Administration</button></a>
-                        <a href="governance-public-policies.html"><button>Governance & Public Policies</button></a>
-                        <a href="town-planning.html"><button>Town Planning & Urban Management</button></a>
-                </div>
-            </div>
-
-            <div class="group">
-                <h2>Group-IV (100 Marks)</h2>
-                <div class="subjects">
-                        <a href="history-pakistan-india.html"><button>History of Pakistan & India</button></a>
-                        <a href="islamic-history.html"><button>Islamic History & Culture</button></a>
-                        <a href="european-history.html"><button>European History</button></a>
-                        <a href="british-history.html"><button>British History</button></a>
-                        <a href="history-usa.html"><button>History of USA</button></a>
-                </div>
-            </div>
-
-            <div class="group">
-                <h2>Group-V (100 Marks)</h2>
-                <div class="subjects">
-                        <a href="gender-studies.html"><button>Gender Studies</button></a>
-                        <a href="environmental-sciences.html"><button>Environmental Sciences</button></a>
-                        <a href="agriculture-forestry.html"><button>Agriculture & Forestry</button></a>
-                        <a href="botany.html"><button>Botany</button></a>
-                        <a href="zoology.html"><button>Zoology</button></a>
-                        <a href="english-literature.html"><button>English Literature</button></a>
-                        <a href="urdu-literature.html"><button>Urdu Literature</button></a>
-                </div>
-                <div class="board_ad">Ad Space</div>
-            </div>
-
-            <div class="group">
-                <h2>Group-VI (100 Marks)</h2>
-                <div class="subjects">
-                        <a href="law.html"><button>Law</button></a>
-                        <a href="constitutional-law.html"><button>Constitutional Law</button></a>
-                        <a href="international-law.html"><button>International Law</button></a>
-                        <a href="muslim-law.html"><button>Muslim Law & Jurisprudence</button></a>
-                        <a href="mercantile-law.html"><button>Mercantile Law</button></a>
-                        <a href="criminology.html"><button>Criminology</button></a>
-                        <a href="philosophy.html"><button>Philosophy</button></a>
-                </div>
-            </div>
-
-            <div class="group">
-                <h2>Group-VII (100 Marks)</h2>
-                    <div class="subjects">
-                        <a href="journalism-mass-communication.html"><button>Journalism & Mass Communication</button></a>
-                        <a href="psychology.html"><button>Psychology</button></a>
-                        <a href="geography.html"><button>Geography</button></a>
-                        <a href="sociology.html"><button>Sociology</button></a>
-                        <a href="anthropology.html"><button>Anthropology</button></a>
-                        <a href="punjabi.html"><button>Punjabi</button></a>
-                        <a href="sindhi.html"><button>Sindhi</button></a>
-                        <a href="pashto.html"><button>Pashto</button></a>
-                        <a href="balochi.html"><button>Balochi</button></a>
-                        <a href="persian.html"><button>Persian</button></a>
-                        <a href="arabic.html"><button>Arabic</button></a>
-                    </div>
-                <div class="board_ad">Ad Space</div>
-            </div>
+        <div class="subjects">
+          <div class="sub-name p-4  bg-white active">
+            <h5 class="text-center ">English Essay</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">English (Precis and Composition)</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">General Science and Ability</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Current Affairs</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Pakistan Affairs</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h6 class="text-center ">Islamic Studies or Comparative Study of Major Religions</h6>
+          </div>
         </div>
-        <div class="right-ad">
-            <p>Right Ad Space</p>
+      </div>
+    </section>
+    <!-- ----------- first section ended or home section ended----------- -->
+    <section class="hero pb-5">
+      <div class="container pt-2">
+        <div class="title text-center">
+          <h1>Group-I <span>(200 Marks)</span></h1>
         </div>
-    </div>
+        <div class="subjects">
+          <div class="sub-name p-4  bg-white active">
+            <h5 class="text-center ">Accountancy & Auditing</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Economics</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Computer Science</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Political Science</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">International Relations</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- --------------------- second section ended--------------- -->
+    <section class="hero pb-5">
+      <div class="container pt-2">
+        <div class="title text-center">
+          <h1><span>Group-II</span>(200 Marks or Two of 100 Marks)</h1>
+        </div>
+        <div class="subjects">
+          <div class="sub-name p-4  bg-white active">
+            <h5 class="text-center">Physics</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Chemistry</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Applied Mathematics</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Pure Mathematics</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Statistics</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Geology</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- --------third section ended----------------- -->
+    <section class="hero pb-5">
+      <div class="container pt-2">
+        <div class="title text-center">
+          <h1>Group-III <span>(100 Marks)</span></h1>
+        </div>
+        <div class="subjects">
+          <div class="sub-name p-4  bg-white active">
+            <h5 class="text-center">Business Administration</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Public Administration</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Governance & Public Policies</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Town Planning & Urban Management</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------section four ended------------ -->
+    <section class="hero pb-5">
+      <div class="container pt-2">
+        <div class="title text-center">
+          <h1><span>Group-IV </span>(100 Marks)</h1>
+        </div>
+        <div class="subjects">
+          <div class="sub-name p-4  bg-white active">
+            <h5 class="text-center">History of Pakistan & India</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Islamic History & Culture</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">European History</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">British History</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">History of USA</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------section five ended -->
+    <section class="hero pb-5">
+      <div class="container pt-2">
+        <div class="title text-center">
+          <h1>Group-V<span>(100 Marks)</span></h1>
+        </div>
+        <div class="subjects">
+          <div class="sub-name p-4  bg-white active">
+            <h5 class="text-center">Gender Studies</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Environmental Sciences</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Agriculture & Forestry</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Botany</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Zoology</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">English Literature</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Urdu Literature</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section six ------------ ended -->
+    <section class="hero pb-5">
+      <div class="container pt-2">
+        <div class="title text-center">
+          <h1>Group-VI (100 Marks)</h1>
+        </div>
+        <div class="subjects">
+          <div class="sub-name p-4  bg-white active">
+            <h5 class="text-center">Law</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Constitutional Law</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">International Law</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Muslim Law & Jurisprudence</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Mercantile Law</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Criminology</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Philosophy</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------section seven ended -->
+    <section class="hero pb-5">
+      <div class="container pt-2">
+        <div class="title text-center">
+          <h1>Group-VII <span>(100 Marks)</span></h1>
+        </div>
+        <div class="subjects">
+          <div class="sub-name p-4  bg-white active">
+            <h5 class="text-center">Journalism & Mass Communication</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Psychology</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Geography</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Sociology</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Anthropology</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Punjabi</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Sindhi</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Pashto</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Balochi</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Persian</h5>
+          </div>
+          <div class="sub-name p-4 bg-white">
+            <h5 class="text-center ">Arabic</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section eight ended------------ -->
+  </section>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="pro.js"></script>
+
 </html>

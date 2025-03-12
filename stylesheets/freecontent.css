@@ -1,166 +1,86 @@
-/*FREE CONTENT PAGE STYLING*/
-body { 
-    margin-top: 12vh;
-    font-family: Arial, sans-serif;
-    margin-left: 0;
-    margin-right: 0;
+*{
     padding: 0;
-  
-
-}
-.nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; /* Align items vertically */
-    background: #41444B; /* Dark background */
-    position:fixed;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    height: 12vh;
-    
-
-}
-
-.nav h1 {
-    color: whitesmoke;
-    text-transform: capitalize;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bolder;
     margin: 0;
-    align-items: center;
-    margin-left: 20px;
-    padding: 10px;
-    font-size: 40px;
+    box-sizing: border-box !important;
 }
-
-
-/* Navigation Links */
-.tags {
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    justify-content: flex end;
-    margin-right: 40px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+/* colors for background is  #F7F7F8 */
+/* main dark color(orange)  #FF9500 */
+/* links color  #262626 */
+body{
+    background-color:#F7F7F8;
 }
-
-/* Navigation Links Styling */
-.tags a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    transition: all 0.3s ease-in-out;
-    border-radius: 5px;
-    
+section .anouncemnt{
+    background-color:blue ;
 }
-
-/* Hover Effects */
-.tags a:hover {
-    background: rgba(255, 255, 255, 0.2);
+section .anouncemnt p{
+    color: #FFFFFF;
+}
+.navbarr nav .nav-item  a{
+    color: #262626 !important;
+    padding: 14px 20px !important;
+}
+.navbarr nav .nav-item  .active{
+    background-color: #F1F1F3;
+}
+.btnn{
+    width: 120px;
+    padding:10px 0 !important;
+    border: 0;
+    background-color: #F7F7F8;
+   
+}
+.color{
+    color: #FFFFFF;
+    transition: .5s;
+    background-color: blue;
+}
+.color:hover{
     transform: scale(1.1);
 }
-.page-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items:center; /* Align ads and content at the top */
-    position: relative;
-    padding: 10px;
-    background-color: rgb(55, 65, 81);
-    overflow-y: hidden;
-}
-
-.left-ad,
-.right-ad {
-    height: 300px;
-    width: 250px;
-    background-color: #f4f4f4;
-    position: fixed;
-    top: 14vh;
-}
-
-.left-ad {
-    left: 15px; /* Adjust as needed */
-    bottom: 80px;
-}
-
-.right-ad {
-    right: 15px; /* Adjust as needed */
-}
-
-.content {
-    /* Allow content to take remaining space */
-    max-width: 800px; /* Adjust width as needed */
-    width: 100%;
+hr{
+    width: 50%;
+    display: none;
     margin: auto;
 }
-
-.group {
+@media screen and (max-width:990px){
+    .btnn{
+        display: block;
+        margin: auto;
+    }
+    hr{
+        display: block !important;
+    }
+}
+/* -----------------nav section ended---------- */
+.title p{
+    font-size: 12px !important;
+}
+.subjects{
+    margin-top: 40px;
     display: flex;
-    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    align-items: center;
-    padding: 0 20px;
-    
-
+    gap: 20px;
 }
-.group a{
-    text-decoration: none;
-}
-.content h2 {
-    background-color: #f4f4f4;
-    padding: 10px;
-    border-left: 10px solid #333;
-    border-right: 10px solid #333;
-    width: 600px;
-    text-align: center;
-    font-size: 18px;
-    
-}
-
-button {
-    display: block;
-    margin: 5px 0;
-    padding: 10px;
+.subjects .sub-name{
     width: 400px;
-    height: 100px;
-    border: 3px solid #f4f4f4;
-    background-color: rgb(31, 41, 55);
-    color: white;
+    color:blue;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 255, 0.418);
+    transition: .5s;
     cursor: pointer;
-    border-radius: 15px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-    transition: all 0.1s ease-in-out;
+    border: 1px solid #F1F1F3;
+    height: 80px;
 }
-
-button:active {
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    transform: translateY(3px);
+.subjects .sub-name:hover{
+    transform: scale(1.09);
+    border: 1px solid blue;
 }
-
-    
-
-
-.board_ad {
-    display: flex;
-    width: 728px;
-    height: 90px;
-    justify-content: center;
-    align-items: center;
-    background-color: lightgray; /* Just for visibility */
-    text-align: center; /* Ensures inline elements like text are centered */
+span{
+    color: blue;
 }
-
-.board_ad p {
-    margin: 0; /* Removes default margin */
-    text-align: center; /* Centers text */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}   
+/* ---------------hero section ended---------------- */
