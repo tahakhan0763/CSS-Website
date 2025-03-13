@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*----------left side styling starts here------------  */
+.title{
+    color: #585858;
+}
+.item{
+    border-bottom: 5px solid rgba(184, 178, 178, 0.219);
+    padding-bottom: 10px;
+    margin: 2px;
+    color: #585858;
+}
+.item i{
+    cursor: pointer;
+}
+.discount{
+    color: #585858;
+}
+.discount input{
+    background-color: #F9F9F9;
+    border: 1px solid #E3E3E3;
+    border-radius: 4px;
+    padding: 8px;
+    width: 70%;
+}
+.discount a{
+    color: #6B72D6;
+    border: 2px solid #6B72D6;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    /* margin-right: 0px; */
+    /* padding: 10px 30px; */
+    margin-left: 10px;
+}
+.detail p{
+    color:#6C6C6C;
+}
+/* --------right side styling begins------------------- */
+.right{
+    background-color: #FCFCFC;
+}
+.option{
+    cursor: pointer;
+}
+.inputs input{
+    background-color: #F9F9F9;
+    border: 1px solid #E3E3E3;
+    padding: 8px;
+    margin: 5px;
+}
+input{
+    border-radius: 4px;
+    background-color: #eeebeb;
+    border: 1px solid #E3E3E3;
+    padding: 8px;
+}
+.figure{
+    width: 65%;
+}
+.figure input{
+    width: 100%;
+    background-color: #F9F9F9;
+}
+.figurer{
+    width: 30%;
+    display: inline-block;
+    margin-left:15px !important;
+}
+.figurer input{
+    width: 100%;
+    background-color: #F9F9F9;
+}
+.mini{
+    font-size: 12px;
+    color: #6C6C6C;
+}
+/* .active{
+    background-color: #e0dede;
+    padding: 8px;
+    border: 1px solid #6B72D6;
+} */
+.numbers{
+    cursor: pointer;
+    padding: 8px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+}
+.numbers:hover{
+    border: 1px solid #6B72D6;
+    background-color: #F9F9F9;
+}
+.submit a{
+    text-decoration: none;
+    border: 1px solid #6B72D6;
+
+}
+.done{
+    background-color: #6B72D6;
+    color: #ffff;
+}
+/* ----------------------right side styling ends and animations starts here------------------ */
+@media screen and (max-width:1205px) {
+    .inputs input {
+        width: 100% !important;
+    }
+    .inputs .figure {
+        width: 100%;
+    }
+    .inputs .figurer{
+        width: 100%;
+        margin-left: 0px !important;
+    }
+}
