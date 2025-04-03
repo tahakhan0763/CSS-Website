@@ -143,6 +143,28 @@ footer {
     width: 100%;
     line-height: 2;
 }
+@media screen and (max-width: 900px){
+    footer {
+        margin-top: 1px;
+        display: block;
+        flex-direction: row;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-style: solid;
+        border-color: #41444B;
+        box-shadow: 0px 5px gray;
+        background-color: #000000;
+        color: white;
+        padding: 10px;
+        font-size: 12px;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
+        line-height: 2;
+    }
+}
 
 footer p {
     font-size: 16px;

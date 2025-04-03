@@ -9,3 +9,14 @@ window.addEventListener("scroll", function () {
         navbar.classList.remove("transparent");
     }
 });
+// -----------nav bar
+ var menu_btn = document.getElementById("menu_btn");
+    var navbar = document.getElementById("navbar");
+    menu_btn.addEventListener('click',function(){
+
+        if(navbar.style.left == "0%"){
+            navbar.style.left = "-100%" 
+        }else{
+            navbar.style.left = "0%"
+        }
+    })
