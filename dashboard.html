@@ -9,7 +9,7 @@
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="stylesheets/dashboard.css">
-  <title>Document</title>
+  <title>DashBoard</title>
 </head>
 
 <body>
@@ -84,7 +84,7 @@
 
       <div class="  mt-2    mid">
         <div class="title px-5">
-          <p class="fs-3">Dash<span>bord</span></p>
+          <p class="fs-3">Dash<span>Board</span></p>
         </div>
         <div class="cards px-3">
           <div class="front">
@@ -99,41 +99,34 @@
           </div>
         </div>
         <div class="row graph mt-2 p-5 shadow-lg m-3 front" id="chart3">
-          <!-- =====================================<br>
-          -------------------------------------- <br>
-          -------------------------------------- <br>
-          -------------------------------------- <br>
-          -------------------------------------- <br>
-          -------------------------------------- <br>
-          -------------------------------------- <br>
-          -------------------------------------- <br> -->
+          
         </div>
 
 
 
         <div class="row mt-2 p-5 shadow-lg m-3 front">
           <div class="title text-center p-3">
-            <p class="fs-3">List of <span>Subjects</span></p>
+            <p class="fs-3">List of <span id="span">Subjects</span></p>
           </div>
-          <div class="subjects">
+          <div class="subjects" id="Subjects">
+          <div class="col-1">
+            <p class="subject-cell ">Current Affairs</p>
+            <p class="subject-cell">Essay</p>
+            <p class="subject-cell">Islamiyat</p>
+            <p class="subject-cell">Mathematics</p>
+          </div>
+          <!-- <div class="col-1">
+            <p>mathematics</p>
+            <p>mathematics</p>
+            <p>mathematics</p>
+            <p>mathematics</p>
+          </div>
           <div class="col-1">
             <p>mathematics</p>
             <p>mathematics</p>
             <p>mathematics</p>
             <p>mathematics</p>
-          </div>
-          <div class="col-1">
-            <p>mathematics</p>
-            <p>mathematics</p>
-            <p>mathematics</p>
-            <p>mathematics</p>
-          </div>
-          <div class="col-1">
-            <p>mathematics</p>
-            <p>mathematics</p>
-            <p>mathematics</p>
-            <p>mathematics</p>
-          </div>
+          </div> -->
         </div>
         </div>
       </div>
@@ -141,43 +134,16 @@
       <!-- right-sied section starts-------------------------------- -->
       <div class=" mt-2  p-4 pt-2 rounded-4  front  right">
         <div class="title text-center p-3">
-          <p class="fs-3">Topics of <span>Geography</span></p>
+          <p class="fs-3">Topics of <span id="bage"></span></p>
         </div>
         <div class="memo">
           <p>
             List of topics
           </p>
         </div>
-        <div class="list">
-         
-          <div class="items d-flex align-items-center justify-content-start  mb-2 p-3 rounded-1">
-            <i class="fa-brands fa-readme  me-3"></i>
-            <a href="#">Reading Materials</a>
-          </div>
-          <div class="items d-flex align-items-center justify-content-start  mb-2 p-3 rounded-1">
-            <i class="fa-brands fa-readme  me-3"></i>
-            <a href="#">Reading Materials</a>
-          </div>
-          <div class="items d-flex align-items-center justify-content-start  mb-2 p-3 rounded-1">
-            <i class="fa-brands fa-readme  me-3"></i>
-            <a href="#">Reading Materials</a>
-          </div>
-          <div class="items d-flex align-items-center justify-content-start  mb-2 p-3 rounded-1">
-            <i class="fa-brands fa-readme  me-3"></i>
-            <a href="#">Reading Materials</a>
-          </div>
-          <div class="items d-flex align-items-center justify-content-start  mb-2 p-3 rounded-1">
-            <i class="fa-brands fa-readme  me-3"></i>
-            <a href="#">Reading Materials</a>
-          </div>
-          <div class="items d-flex align-items-center justify-content-start  mb-2 p-3 rounded-1">
-            <i class="fa-brands fa-readme  me-3"></i>
-            <a href="#">Reading Materials</a>
-          </div>
-          <div class="items d-flex align-items-center justify-content-start  mb-2 p-3 rounded-1">
-            <i class="fa-brands fa-readme  me-3"></i>
-            <a href="#">Reading Materials</a>
-          </div>
+        <div class="list" id="topics-list">
+       
+          
         </div>
       </div>
     </div>
@@ -324,6 +290,7 @@ if (lenght> 80) {
 
 
 </body>
+<script src="content.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 

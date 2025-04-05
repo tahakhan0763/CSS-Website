@@ -154,6 +154,20 @@ transition: .5s;
     font-size: 16px;
     font-weight: 700;
 }
+.subjects p{
+    box-sizing: border-box !important;
+    width: 250px;
+    padding: 10px 20px;
+    border-radius:4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 0px !important;
+}
+.subjects p:hover{
+    background-color: #4880FF;
+    color: #F5F6FA;
+    
+}
 @media screen and (max-width:790px){
     .cards{
         grid-template-columns: 1fr;
@@ -208,4 +222,23 @@ transition: .5s;
       grid-column: auto;
     }
    
+  }
+.right{
+    overflow: scroll !important;
+    height: 90vh !important;
+  }
+  #topics-list .items{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 1px !important;
+    padding: 15px !important;
+    border-radius: 4px;
+    border-bottom-left-radius: 0px;
+    border-end-end-radius: 0px;
+    border-bottom: 1px solid #4880FF;
+  }
+  .active{
+    background-color: #4880FF;
+    color: #ffffff;
   }
