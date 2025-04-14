@@ -61,7 +61,19 @@ body{
     border-radius: 5px;  
     padding: 10px 20px;
 }
+ 
+.tags #user_img{
+    width: 70px;
+    height: 70px;
+    padding: none;
+    margin: 0;
+    border-radius: 50%;
 
+}
+.tags #user_img img{
+    width: 100%;
+    border-radius: 50%;
+}
 
 /* Hover Effects */
 .tags a:hover {
@@ -109,7 +121,7 @@ body{
 /* ---------user_img_icon */
 #user_img{
     border-radius: 60%;
-    background-color: rgba(128, 128, 128, 0.541);
+    /* background-color: rgba(128, 128, 128, 0.541); */
     width: 50px;
     height: 50px;
     text-align: center;

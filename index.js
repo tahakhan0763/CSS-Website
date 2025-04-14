@@ -12,6 +12,7 @@ window.addEventListener("scroll", function () {
 // -----------nav bar
  var menu_btn = document.getElementById("menu_btn");
     var navbar = document.getElementById("navbar");
+      navbar.style.left = "-100%"
     menu_btn.addEventListener('click',function(){
 
         if(navbar.style.left == "0%"){
