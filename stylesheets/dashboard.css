@@ -2,10 +2,14 @@
     box-sizing: border-box;
 }
 /* ----------nav section started--------------- */
+body{
+    width: 100%;
+}
 body nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 body nav .logo{
     display: flex;
@@ -133,9 +137,10 @@ transition: .5s;
 /* --------------side-bar completed--------------------------- */
 /* ------mid section starts here-------------- */
 .mid{
-    background-color: #F5F6FA;
+    
     overflow: scroll;
     height: 100vh;
+    
 }
 .mid .name{
     font-family:Arial, Helvetica, sans-serif;
@@ -169,12 +174,21 @@ transition: .5s;
     
 }
 @media screen and (max-width:790px){
-    .cards{
-        grid-template-columns: 1fr;
-        
+    .user-id{
+        display: none;
     }
-    
-
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .cards .front{
+        flex-basis: 100%;
+    }
+    .subjects{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
 }
 
 /* -------------mid section ends-------------------- */
@@ -215,12 +229,15 @@ transition: .5s;
   }
   
   /* Responsive for small screens (e.g., mobile) */
-  @media (max-width: 600px) {
+  @media screen and  (max-width: 600px) {
     .list{
         display: grid ;
         grid-template-columns:  1fr ;
     }
-   
+    #user-id{
+        display: none !important;
+    }
+
   }
 .right{
     overflow: scroll !important;
