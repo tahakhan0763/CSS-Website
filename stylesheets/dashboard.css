@@ -171,7 +171,9 @@ transition: .5s;
 @media screen and (max-width:790px){
     .cards{
         grid-template-columns: 1fr;
+        
     }
+    
 
 }
 
@@ -214,12 +216,9 @@ transition: .5s;
   
   /* Responsive for small screens (e.g., mobile) */
   @media (max-width: 600px) {
-    .dashboard {
-      grid-template-columns: 100%; 
-      grid-template-rows: auto auto auto;
-    }
-    .side, .mid, .right {
-      grid-column: auto;
+    .list{
+        display: grid ;
+        grid-template-columns:  1fr ;
     }
    
   }
@@ -242,3 +241,5 @@ transition: .5s;
     background-color: #4880FF;
     color: #ffffff;
   }
+  /* --------------dashboard ended---------------- */
+
