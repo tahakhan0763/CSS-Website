@@ -4,19 +4,21 @@
 
 body{
     scroll-behavior: smooth;
-   
 }
-
+.wrapper{
+    width: 100% !important;
+}
+nav{
+    width: 100%;
+}
 .nav {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
     align-items: center; /* Align items vertically */
     background: rgba(65, 68, 75, 0.0); /* Dark background */
     position:fixed;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    position: fixed;
-    width: 100%;
     top: 0;
     z-index: 1000;
     height: 12vh;
@@ -92,6 +94,9 @@ body{
     }
 }
 @media screen and (max-width: 900px){
+    nav{
+       
+    }
     .tags{
         padding-top: 90px;
         flex-direction: column;
@@ -176,6 +181,9 @@ footer {
         width: 100%;
         line-height: 2;
     }
+    iframe{
+        width: 100%;
+    }
 }
 
 footer p {
@@ -186,5 +194,6 @@ footer p {
 footer .contact_us p:last-child {
     border-bottom: none;
 }
+
 
 

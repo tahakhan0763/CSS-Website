@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <div class="container-fluid shadow-sm">
+  <div class="wrapper container-fluid">
     <nav class="px-2 py-3">
       <div class="logo">
         <i class="fa-solid fa-bars fs-2" id="toggle_icon"></i>
@@ -25,129 +25,131 @@
           <div class="img">
             <img src="Images/img.jpeg">
           </div>
-          <div class="user-id">
+          <div class="user-id ">
             <p>Kamran</p>
             <label for="">Admin</label>
           </div>
         </div>
-
       </div>
-
     </nav>
-  </div>
-
-  <!-- ============nav section ended -->
-  <section class="">
-    <div class="rows" id="back">
-      <!-- sidebar strted----------------------------------------------- -->
-      <div class="  mt-2  p-4 pt-2 pb-0 rounded-4 front side" id="side">
-        <div class="title text-center p-3" id="remove">
-          <p class="fs-3">Lyc<span>eum</span></p>
-        </div>
-        <div class="memo">
-          <p>
-            Services
-          </p>
-        </div>
-        <div class="services_list mt-3">
-          <div class="items d-flex align-items-center justify-content-start  mb-2 p-3 rounded-1">
-            <i class="fa-brands fa-readme  me-3"></i>
-            <a href="#">Reading Materials</a>
+    <!-- ============nav section ended -->
+    <section class="">
+      <div class="rows" id="back">
+        <!-- sidebar strted----------------------------------------------- -->
+        <div class="  mt-2  p-4 pt-2 pb-0 rounded-4 front side" id="side">
+          <div class="title text-center p-3" id="remove">
+            <p class="fs-3">Lyc<span>eum</span></p>
           </div>
-          <div class="items d-flex align-items-center justify-content-start  mb-2 p-3 rounded-1">
-            <i class="fa-solid fa-note-sticky me-3"></i>
-            <a href="#">Ready-Made Notes</a>
+          <div class="memo">
+            <p>
+              Services
+            </p>
           </div>
-          <div class="items d-flex align-items-center justify-content-start mb-2 p-3 rounded-1">
-            <i class="fa-solid fa-square-check me-3"></i>
-            <a href="#">Essay Checking</a>
-          </div>
-          <div class="items d-flex align-items-center justify-content-start mb-2 p-3 rounded-1">
-            <i class="fa-solid fa-person-chalkboard me-3"></i>
-            <a href="#">Mentorship Program</a>
-          </div>
-          <div class="buttons mt-5">
-            <div class="items d-flex align-items-center justify-content-start mb-1 p-3 rounded-1">
-              <i class="fa-solid fa-gear me-3"></i>
-              <a href="#">Settings</a>
+          <div class="services_list mt-3">
+            <div class="items d-flex align-items-center justify-content-start  mb-2 p-3 rounded-1">
+              <i class="fa-brands fa-readme  me-3"></i>
+              <a href="#">Reading Materials</a>
+            </div>
+            <div class="items d-flex align-items-center justify-content-start  mb-2 p-3 rounded-1">
+              <i class="fa-solid fa-note-sticky me-3"></i>
+              <a href="#">Ready-Made Notes</a>
             </div>
             <div class="items d-flex align-items-center justify-content-start mb-2 p-3 rounded-1">
-              <i class="fa-solid fa-power-off me-3"></i>
-              <a href="#">Logout</a>
+              <i class="fa-solid fa-square-check me-3"></i>
+              <a href="#">Essay Checking</a>
+            </div>
+            <div class="items d-flex align-items-center justify-content-start mb-2 p-3 rounded-1">
+              <i class="fa-solid fa-person-chalkboard me-3"></i>
+              <a href="#">Mentorship Program</a>
+            </div>
+            <div class="buttons mt-5">
+              <div class="items d-flex align-items-center justify-content-start mb-1 p-3 rounded-1">
+                <i class="fa-solid fa-gear me-3"></i>
+                <a href="#">Settings</a>
+              </div>
+              <div class="items d-flex align-items-center justify-content-start mb-2 p-3 rounded-1">
+                <i class="fa-solid fa-power-off me-3"></i>
+                <a href="#">Logout</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- side -bar- ended--------------------------------------- -->
-
-      <!-- mid-section started----------------------------- -->
-
-      <div class="  mt-2    mid">
-        <div class="title px-5">
-          <p class="fs-3">Dash<span>Board</span></p>
-        </div>
-        <div class="cards px-3">
-          <div class="front">
-            <p>PERCENTAGE OF COURSE DONE.
-              MASTERY ACHIEVED
-            </p>
-            <div class="" id="chart"></div>
+        <!-- side -bar- ended--------------------------------------- -->
+  
+        <!-- mid-section started----------------------------- -->
+  
+        <div class="  mt-2    mid">
+          <div class="title px-5">
+            <p class="fs-3">Dash<span>Board</span></p>
           </div>
-          <div class="front">
-            <p class="mb-5">Days Till Expiry: </p>
-            <div class="chart" id="chart2"></div>
+          <div class="cards px-3">
+            <div class="front">
+              <p>PERCENTAGE OF COURSE DONE.
+                MASTERY ACHIEVED
+              </p>
+              <div class="" id="chart"></div>
+            </div>
+            <div class="front">
+              <p class="mb-5">Days Till Expiry: </p>
+              <div class="chart" id="chart2"></div>
+            </div>
+          </div>
+          <div class="row graph mt-2 p-5 shadow-lg m-3 front" id="chart3">
+            
+          </div>
+  
+  
+  
+          <div class="row mt-2 p-5 shadow-lg m-3 front">
+            <div class="title text-center p-3">
+              <p class="fs-3">List of <span id="span">Subjects</span></p>
+            </div>
+            <div class="subjects" id="Subjects">
+            <div class="col-1">
+              <p class="subject-cell ">Current Affairs</p>
+              <p class="subject-cell">Essay</p>
+              <p class="subject-cell">Islamiyat</p>
+              <p class="subject-cell">Mathematics</p>
+            </div>
+            <!-- <div class="col-1">
+              <p>mathematics</p>
+              <p>mathematics</p>
+              <p>mathematics</p>
+              <p>mathematics</p>
+            </div>
+            <div class="col-1">
+              <p>mathematics</p>
+              <p>mathematics</p>
+              <p>mathematics</p>
+              <p>mathematics</p>
+            </div> -->
+          </div>
           </div>
         </div>
-        <div class="row graph mt-2 p-5 shadow-lg m-3 front" id="chart3">
-          
-        </div>
-
-
-
-        <div class="row mt-2 p-5 shadow-lg m-3 front">
+        <!-- mid-section-ended---------------------------------------------- -->
+        <!-- right-sied section starts-------------------------------- -->
+        <div class=" mt-2  p-4 pt-2 rounded-4  front  right">
           <div class="title text-center p-3">
-            <p class="fs-3">List of <span id="span">Subjects</span></p>
+            <p class="fs-3">Topics of <span id="bage"></span></p>
           </div>
-          <div class="subjects" id="Subjects">
-          <div class="col-1">
-            <p class="subject-cell ">Current Affairs</p>
-            <p class="subject-cell">Essay</p>
-            <p class="subject-cell">Islamiyat</p>
-            <p class="subject-cell">Mathematics</p>
+          <div class="memo">
+            <p>
+              List of topics
+            </p>
           </div>
-          <!-- <div class="col-1">
-            <p>mathematics</p>
-            <p>mathematics</p>
-            <p>mathematics</p>
-            <p>mathematics</p>
+          <div class="list" id="topics-list">
+         
+            
           </div>
-          <div class="col-1">
-            <p>mathematics</p>
-            <p>mathematics</p>
-            <p>mathematics</p>
-            <p>mathematics</p>
-          </div> -->
-        </div>
         </div>
       </div>
-      <!-- mid-section-ended---------------------------------------------- -->
-      <!-- right-sied section starts-------------------------------- -->
-      <div class=" mt-2  p-4 pt-2 rounded-4  front  right">
-        <div class="title text-center p-3">
-          <p class="fs-3">Topics of <span id="bage"></span></p>
-        </div>
-        <div class="memo">
-          <p>
-            List of topics
-          </p>
-        </div>
-        <div class="list" id="topics-list">
-       
-          
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  
+  </div>
+   
+
+
+  
 
 
   <!-- Include ApexCharts -->
